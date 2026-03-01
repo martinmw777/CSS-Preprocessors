@@ -1,0 +1,35 @@
+@import "variables.less";
+@import "nav.less";
+@import "footer.less";
+@import "box.less";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 100% Helvetica, sans-serif;
+  color: @text-color;
+  background: @page-bg;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page {
+  flex: 1;
+  padding-top: @nav-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-area {
+  width: min(1100px, 95vw);
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+}

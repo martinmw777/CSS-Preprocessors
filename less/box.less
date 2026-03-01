@@ -1,0 +1,20 @@
+.makeBox(@bg, @size) {
+  background: @bg;
+  width: unit(@size, px);
+  height: unit(@size, px);
+  border: @border-width solid @border-color;
+  border-radius: @radius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.box {
+  color: #fff;
+}
+
+.red { .makeBox(@box-red, 100); }
+.blue { .makeBox(@box-blue, 200); }
+.green { .makeBox(@box-green, 250); }
+.purple { .makeBox(@box-purple, 50); }
